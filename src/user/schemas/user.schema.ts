@@ -1,13 +1,6 @@
-import  { Schema,Document,model  } from 'mongoose';
+import  { Schema,model  } from 'mongoose';
 import { roleEnum } from '../enums/role.enum';
-
-export interface IUser extends Document {
-  readonly name: string;
-  readonly surname: string;
-  readonly email:string;
-  readonly password:string;
-  readonly role:string;
-}
+import { IUser } from '../interfaces/user.interface';
 
 export const UserSchema: Schema = new Schema({
   name: {type:String, required: true},

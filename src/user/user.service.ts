@@ -5,7 +5,7 @@ import * as bcrypt from 'bcrypt';
 import * as _ from 'lodash';
 
 
-import { IUser } from './schemas/user.schema';
+import { IUser } from './interfaces/user.interface';
 import { CreateUserDto } from './dto/create-user.dto';
 
 @Injectable()
